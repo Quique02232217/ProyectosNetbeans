@@ -1,0 +1,3 @@
+rafael;hernandez;rafhernandez;12345;500000
+samuel;beleño;samubeleño;32165;400000
+alexander;meza;alemeza;78945;10000

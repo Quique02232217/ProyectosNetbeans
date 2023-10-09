@@ -1,0 +1,5 @@
+TICKET DE COMPRA
+Nombre de la cliente ---> mario yepes
+identificacion ---> 1500142
+Producto ---> Jean
+TOTAL ---> 15000

@@ -1,0 +1,5 @@
+TICKET DE COMPRA
+Nombre de la cliente ---> teo
+identificacion ---> 7891225
+Producto ---> Producto 1
+TOTAL ---> 10.0

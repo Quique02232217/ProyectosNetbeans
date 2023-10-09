@@ -1,0 +1,13 @@
+leche, 1000, 2500
+azucar, 1000, 2000
+sal, 1000, 2000
+lentejas, 1000, 4000
+harina, 1000, 4000
+huevos, 2000, 600
+aceite, 1000, 30000
+arroz, 1000, 12000
+atun, 1000, 4000
+cafe, 1000, 15000
+queso, 1000, 20000
+queso crema, 1000, 4500
+queso mozzarella, 1000, 9000

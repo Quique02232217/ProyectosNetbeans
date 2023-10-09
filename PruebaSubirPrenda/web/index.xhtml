@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"                          
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://xmlns.jcp.org/jsf/">
+
+
+    <h:head>
+        <title>Subir Prenda</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div class="contactividades">
+                <div class="pfa">
+                    <p:panelGrid columns="2">
+
+                        <h:outputText value ="Nombre"/>
+                            <p:inputText value ="#{prendaController.prenda.nombre}"/>
+
+                        <h:outputText value ="Talla"/>
+                            <p:inputText value="#{prendaController.prenda.talla}"/>
+
+                        <h:outputText value="Precio"/>
+                            <p:inputText value="#{prendaController.prenda.precio}"/>
+
+                        <h:outputText value="Color"/>
+                            <p:inputText value = "#{prendaController.prenda.color}"/>
+                            
+                        <h:outputText value = "Cantidad"/>
+                            <p:inputText value = "#{prendaController.prenda.cantidad}"/>
+
+                    </p:panelGrid>
+                    <h:commandButton value="Registrar" action="#{prendaController.subirPrendaAlaLista()}"/> 
+                </div>
+                
+                
+                
+                <div class = "pta">
+                    <p:dataTable var = "prenda" value = "#{prendaController.listadeprendas}">
+                        <p:column headerText = "Nombre">
+                            <h:outputText value="#{prenda.nombre}"/>
+                        </p:column>
+                        
+                        <p:column headerText = "Talla">
+                            <h:outputText value="#{prenda.talla}"/>
+                        </p:column>
+                       
+                         <p:column headerText = "Precio">
+                             <h:outputText value="#{prenda.precio}"/>
+                        </p:column>
+                       
+                         <p:column headerText = "Color">
+                            <h:outputText value="#{prenda.color}"/>
+                        </p:column>
+                       
+                         <p:column headerText = "Cantidad">
+                             <h:outputText value="#{prenda.cantidad}"/>
+                        </p:column>
+                       
+                    </p:dataTable>
+                    
+                    
+                </div>
+
+            </div>
+
+        </h:form>
+
+
+
+        <style>
+            .contactividades {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "pfa pta";
+            }
+
+            .pfa {
+                grid-area: pfa;
+            }
+
+            .pta {
+                grid-area: pta;
+            }
+
+        </style>
+
+    </h:body>
+</html>
+

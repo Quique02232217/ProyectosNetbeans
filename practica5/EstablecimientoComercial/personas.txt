@@ -1,0 +1,3 @@
+juan, meza, doctor, 11111, 1
+pedro, ramirez, albañil, 11112, 2
+miguel, perez, comerciante, 11113, 3 

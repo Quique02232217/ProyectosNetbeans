@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Subir al catalogo</title>
+    </h:head>
+    <h:body>
+        <div>
+            <form action="Controller" method="POST">
+                <input type="submit" name="accion" value="listar"/>
+                <input type="submit" name="accion" value="nuevo"/>
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>TALLA</th> 
+                        <th>PRECIO</th>
+                        <th>COLOR</th>
+                        <th>IMAGEN</th>
+                    </tr>
+                </thead>
+                <c:forEach var="prenda" items="${lista}">
+                    <td>${prenda.getId()}</td>
+                    <td>${prenda.getNombre()}</td>
+                    <td>${prenda.getTalla()}</td>
+                    <td>${prenda.getPrecio()}</td>
+                    <td>${prenda.getColor()}</td>
+                    <td><img src="ControllerIMG?id=${prenda.getId()}" width="250" height="230"/></td>
+                    <td>
+                        <form action="Controller" method="POST">
+                <input type="submit" name="accion" value="Editar"/>
+                <input type="submit" name="accion" value="Borrar"/>
+            </form>
+                    </td>
+                </c:forEach>
+            </table>
+        </div>
+    </h:body>
+</html>
+

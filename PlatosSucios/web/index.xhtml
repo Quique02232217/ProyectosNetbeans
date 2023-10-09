@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:head>
+        <title>Prueba de los platos</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div class="contactividades">
+                <div class="pfa">
+            <p:panelGrid columns = "2">
+                <h:outputText value="codigo"/>
+                <p:inputText value="#{platoController.platoEntregado.codigo}"/>
+                <h:outputText value="tipo"/>
+                <p:inputText value="#{platoController.platoEntregado.tipo}"/>
+                <h:outputText value="estado"/>
+                <p:inputText value="#{platoController.platoEntregado.estado}"/>
+            </p:panelGrid>
+            <h:commandButton value="Agregar a entregado" action="#{platoController.entregar()}"/>
+        </div>
+                <p:dataTable var="plato" value="#{platoController.pilaplatos}">
+                    <p:column headerText="Codigo">
+                        <h:outputText value="#{plato.codigo}"/>
+                    </p:column>
+                    <p:column headerText="Tipo">
+                        <h:outputText value="#{plato.tipo}"/>
+                    </p:column>
+                </p:dataTable>
+                <h:commandButton value="seleccionar" action = "#{platoController.devolver()}"/>
+                
+                
+                <p:dataTable value="#{platoController.listaplatos}" >
+                    <p:column headerText="Codigo">
+                        #{plato.codigo}
+                    </p:column>
+                    <p:column headerText="Tipo">
+                        #{plato.tipo}
+                    </p:column>
+                    
+                </p:dataTable>
+                <h:commandButton/>
+                
+                </div>
+        </h:form>
+        
+
+        <style>
+            .contactividades {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "pfa pta";
+            }
+
+            .pfa {
+                grid-area: pfa;
+            }
+
+            .pta {
+                grid-area: pta;
+            }
+
+        </style>
+        
+    </h:body>
+
+</html>
+

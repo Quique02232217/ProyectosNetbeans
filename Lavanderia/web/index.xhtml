@@ -1,0 +1,246 @@
+ q<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+          
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Lavadoras</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div class = "contactividades">
+                <div class="pfa">
+                    <h2 class="lavadora">Lavadoras</h2>
+                    <p:panelGrid columns="2">
+                        <h:outputText value = "Codigo"/>
+                        <p:inputText value="#{controlador.lavadora.codigo}"/>
+                        
+                    </p:panelGrid>
+                    <h:commandButton value="+" action="#{controlador.crearLavadora()}"/>
+                        
+                    
+                    
+                </div>
+                
+                <p:panel>
+                    <h2 class="Lavadoras disponibles">Lavadoras disponibles</h2>
+                    
+                    <p:dataTable var="lav" value="#{controlador.listadelavadoras}" >
+
+                    <p:column headerText="Codigo">
+                        <h:outputText value="#{lav.codigo}"/>
+                    </p:column>
+
+                    <p:column headerText="Cantidad quita Mancha">
+                        <h:outputText value="#{lav.cantidadQuitaMancha}"/>
+                    </p:column>
+                        
+                    <p:column headerText="Cantida quita sucio">
+                        <h:outputText value="#{lav.cantidadQuitaSucio}"/>
+                    </p:column>    
+                       
+                    <p:column headerText="Lavar">
+                        <h:commandButton value="lavar" action="#{controlador.lavarRopa(lav)}"/>
+                    </p:column>    
+
+
+                   
+                     </p:dataTable>
+                </p:panel>
+            
+                <div class = "pta">
+                    <h2 class="prendas">prendas</h2>
+                    <p:panelGrid columns="2">
+                        <h:outputText value = "Codigo"/>
+                        <p:inputText value="#{controlador.prendadevestir.codigo}"/>
+                        <h:outputText value = "Tipo"/>
+                        <p:inputText value="#{controlador.prendadevestir.tipo}"/>
+                        <h:outputText value = "Cantidad Mancha"/>
+                        <p:inputText value="#{controlador.prendadevestir.cantidadMancha}"/>
+                        <h:outputText value = "Cantidad Sucio"/>
+                        <p:inputText value="#{controlador.prendadevestir.cantidadSucio}"/>
+                        <h:outputText value = "Talla"/>
+                        <p:inputText value="#{controlador.prendadevestir.talla}"/>
+                        
+                    </p:panelGrid>
+                    <h:commandButton value="agregar prenda" action="#{controlador.agregarPilaRopaSucia()}"/>
+                    
+                </div>
+                
+                
+                <p:panel>
+                    <h2 class="pilaprendassucias">pila de prendas sucias </h2>
+                    <p:dataTable value="#{controlador.pilaprendasucias}" var="prendasucias">
+
+                        <p:column headerText="codigo">
+                            <h:outputText value="#{prendasucias.codigo}"/>
+                        </p:column>
+
+                        <p:column headerText="tipo">
+                            <h:outputText value="#{prendasucias.tipo}"/>
+                        </p:column>
+
+                        <p:column headerText="Cantidad de mancha">
+                            <h:outputText value="#{prendasucias.cantidadMancha}"/>
+                        </p:column>
+                        
+                        <p:column headerText="Cantidad de sucio">
+                            <h:outputText value="#{prendasucias.cantidadSucio}"/>
+                        </p:column>
+                        
+                        <p:column headerText="Talla">
+                            <h:outputText value="#{prendasucias.talla}"/>
+                        </p:column>
+                        
+                        <p:column headerText="enviar">
+                            <h:commandButton value="enviar" action="#{controlador.agregarPlataforma()}"/>
+                        </p:column>
+       
+                            
+                    </p:dataTable>
+                </p:panel>
+                
+                
+                
+                
+                <p:panel>
+                    <h2 class="prenda a lavar ">plataforma prenda a lavar </h2>
+                    
+                    <p:dataTable value="#{controlador.plataformaPrendaLavar}" var="prendaAlavar">
+
+                    <p:column headerText="Codigo">
+                        <h:outputText value="#{prendaAlavar.codigo}"/>
+                    </p:column>
+
+                    <p:column headerText="tipo">
+                        <h:outputText value="#{prendaAlavar.tipo}"/>
+                    </p:column>
+                        
+                    <p:column headerText="cantidad de manchas">
+                        <h:outputText value="#{prendaAlavar.cantidadMancha}"/>
+                    </p:column>    
+                        
+                    
+                    <p:column headerText="Cantida de sucio">
+                        <h:outputText value="#{prendaAlavar.cantidadSucio}"/>
+                    </p:column>  
+                                              
+                     <p:column headerText="talla">
+                         <h:outputText value="#{prendaAlavar.talla}"/>
+                    </p:column>       
+    
+                     </p:dataTable>
+                </p:panel>
+                
+               
+                
+                <p:panel> 
+                        <h2 class="listaropalimpia">Lista Ropa Limpia</h2>
+                    <p:dataTable value="#{controlador.listaderopalimpia}" var = "prendalimpia">
+                        
+                        <p:column headerText="Codigo">
+                            <h:outputText value="#{prendalimpia.codigo}"/>
+                    </p:column>
+
+                    <p:column headerText="tipo">
+                        <h:outputText value="#{prendalimpia.tipo}"/>
+                    </p:column>
+                        
+                    <p:column headerText="cantidad de manchas">
+                        <h:outputText value="#{prendalimpia.cantidadMancha}"/>
+                    </p:column>    
+                        
+                    
+                    <p:column headerText="Cantida de sucio">
+                        <h:outputText value="#{prendalimpia.cantidadSucio}"/>
+                    </p:column>  
+                                              
+                     <p:column headerText="talla">
+                         <h:outputText value="#{prendalimpia.talla}"/>
+                    </p:column>  
+                        
+                        
+                    </p:dataTable>
+                </p:panel>
+
+               
+                
+                
+                <p:panel>
+                     <h2>pila de prendas pre-lavadas</h2>
+                    <p:dataTable value="#{controlador.prendasPrelavadas}" var="prendaPrelavada">
+
+                        <p:column headerText="codigo">
+                            <h:outputText value="#{prendaPrelavada.codigo}"  style="background: #{controlador.color(prendaPrelavada)}"/>
+                        </p:column>
+
+                        <p:column headerText="tipo">
+                            <h:outputText value="#{prendaPrelavada.tipo}"/>
+                        </p:column>
+
+                        <p:column headerText="Cantidad de mancha">
+                            <h:outputText value="#{prendaPrelavada.cantidadMancha}" style="background: #{controlador.color(prendaPrelavada)}"/>
+                        </p:column>
+                        
+                        <p:column headerText="Cantidad de sucio">
+                            <h:outputText value="#{prendaPrelavada.cantidadSucio}" style="background: #{controlador.color(prendaPrelavada)}"/>
+                        </p:column>
+                        
+                        <p:column headerText="Talla">
+                            <h:outputText value="#{prendaPrelavada.talla}"/>
+                        </p:column>
+                        
+                        <p:column headerText="enviar">
+                            <h:commandButton value="verificar" action="#{controlador.dividir(prendaPrelavada)}"/>
+                        </p:column>
+ 
+                            
+                    </p:dataTable>
+                </p:panel>
+                
+                
+                
+                
+
+                
+            </div>
+            
+        </h:form>
+        
+        
+        <style>
+            .contactividades {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "pfa pta";
+            }
+
+            .pfa {
+                grid-area: pfa;
+            }
+
+            .pta {
+                grid-area: pta;
+            }
+            
+            .listaropalimpia{
+                text-align: center;
+                color:  seagreen;
+            }
+            
+            .pilaprendassucias{
+                text-align: center;
+                color:  red;
+            }
+            
+
+        </style>
+    </h:body>
+</html>
+
+

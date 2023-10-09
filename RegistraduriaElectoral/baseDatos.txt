@@ -1,0 +1,30 @@
+Juan Pablo;Luna Arevalo;17;02/06/2005;1043644694;catolico;ninguna;clinica blasdelezo;3001566855
+Andres Felipe;Ayala Polo;17;01/09/2005;1043646683;budismo;ninguna;clinica blasdelezo;3001566855
+Jose;Bohorquez;18;05/10/2004;1043640994;islam;ninguna;clinica blasdelezo;3001566855
+Liannys Sophia;Corral Navas;16;29/11/2005;1043648976;ninguna;ninguna;clinica blasdelezo;3001566855
+Jailer;Palencia Cardenas;19;16/10/2003;1049894210;evangelico;ninguna;clinica blasdelezo;3001566855
+Keren Zulay;Lopez Cairoza;19;27/07/2003;1007973660;catolico;ninguna;clinica blasdelezo;
+freddy enrique;padilla arzuza;20;14/03/2002;1001903476;catolico;ninguna;clinica blasdelezo;3001566855
+Wendy Jullieth;Ortiz Zuniga;19;10/11/2002;1002246153;catolico;ninguna;clinica blasdelezo;3001566855
+Valeria;Silva Benitez;17;10/11/2022;1041973878;mormon;ninguna;clinica blasdelezo;3001566855
+Rafael Eduardo;Martinez Villalba;17;11/01/2005;1043964743;adventista;ninguna;clinica blasdelezo;3001566855
+Gabriel Jose;Buelvas Morales;19;21/03/2003;1104256394;catolico;ninguna;clinica blasdelezo;3001566855
+Valeria;Moreno Castillo;17;03/11/2004;1128049833;catolico;ninguna;clinica blasdelezo;3001566855
+Sergio;Olier Meza;17;17/01/2005;1041974654;catolico;ninguna;clinica blasdelezo;3001566855
+Ernesto Carlos;Padilla Castillo;19;20/09/2003;1002247107;catolico;ninguna;clinica blasdelezo;3001566855
+Darril;vazques;18;12/07/2004;1047370453;catolico;ninguna;clinica blasdelezo;3001566855
+Camilo Andres;Correa Payares;17;08/02/2005;1041974833;catolico;ninguna;clinica blasdelezo;3001566855
+Marco Antonio;Rhenals Agresoth;17;04/04/2005;1043643914;catolico;ninguna;clinica blasdelezo;3001566855
+Oliver Andres;Paya Angulo;23;29/08/1999;1235045461;catolico;ninguna;clinica blasdelezo;3001566855
+Jesus David;Mestre Polo;19;27/09/2003;1007263806;catolico;ninguna;clinica blasdelezo;3001566855
+Diego Andres;Serpa Garcia;17;16/06/2005;1043644713;catolico;ninguna;clinica blasdelezo;3001566855
+Jose Daniel;Lopez Castellanos;18;05/04/2004;1073788096;catolico;ninguna;clinica blasdelezo;3001166855
+Jesus David;Moron Robles;18;31/12/2003;1043965951;catolico;ninguna;clinica blasdelezo;3001546815
+Cristian Jose;Nino Acuna;18;15/05/2004;1052957052;catolico;ninguna;clinica blasdelezo;3001546825
+Owen alejandro;pulgarin mora;17;23/03/2005;1043645024;evangelico;ninguna;clinica blasdelezo;3001546835
+Amy Lee;Herazo Bossa;18;12/05/2004;1043637396;catolico;ninguna;clinica blasdelezo;3001546845
+Miguel Ángel;Portilla Hurtado;18;18/09/2004;1110286065;catolico;ninguna;clinica blasdelezo;3001546878
+Alan David;Mendoza Redondo;20;12/02/2002;1007983441;catolico;ninguna;clinica blasdelezo;3001546875
+Manuel Jesus;Orozco Castano;18;25/07/2004;1047384408;mormon;ninguna;clinica blasdelezo;3001546885
+Kendri Samuel;Perez mercado;17;01/12/2004;1043641659;catolico;ninguna;clinica blasdelezo;3001546895
+rafael;hernandez meza;18;02/04/2005;1043965946;catolico;ninguna;clinica blasdelezo;3001546810

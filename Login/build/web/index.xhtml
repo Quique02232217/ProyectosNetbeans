@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>login</title>
+    </h:head>
+    <h:body>
+        
+        
+    <div class="login">
+        <h:form>
+
+                 
+            <h:panelGrid columns="2">
+                     
+                <p:panel header="registro">
+                    <p:panelGrid columns="2">
+                        
+                        
+                        
+                        <h:outputText value="nombre:" />
+                        <p:inputText value="#{controlador1.nombre}"/>  
+
+                        <h:outputText value="apellidos:" />
+                        <p:inputText value="#{controlador1.apellido}"/>  
+
+                        <h:outputText value="correo:" />
+                        <p:inputText value="#{controlador1.correo}"/>  
+
+                        <h:outputText value="contraseña:" />
+                        <p:inputText value="#{controlador1.contraseña}"/>  
+
+
+                        <h:column>
+                            <h:commandButton value="registrarme" action="#{controlador1.guardar()}"/>
+                        </h:column>
+                    </p:panelGrid>
+
+                </p:panel>
+                
+                
+                
+                <p:panel header="inicio de sesion">
+                    <p:panelGrid columns="2">
+                        
+                        <h:outputText value="correo" />
+                        <p:inputText value="#{controlador1.correoSesion}"/> 
+                        
+                        <h:outputText value="contraseña" />
+                        <p:inputText value="#{controlador1.contraseñaSesion}"/> 
+                        
+                        <h:column>
+                            <h:commandButton value="iniciar sesion" action="#{controlador1.iniciosesion()}"/>
+                        </h:column>
+                        
+                    </p:panelGrid>
+                </p:panel>
+                    
+                    
+            </h:panelGrid>
+                   
+                
+            <p:growl/>
+        </h:form>         
+    </div>
+        
+        
+        
+        <style>
+            
+            .login{
+                text-align: center;
+                width: 850px;
+                margin: 50px auto; /* Centrar horizontalmente en la pantalla */
+                padding: 30px; 
+                border: 5px solid #9EDDFF; 
+                background-color: #A6F6FF; 
+                border-radius: 10px;
+                box-shadow: 5px 5px 15px #252B48; /* Sombra */
+            }
+        </style>
+
+  
+    </h:body>
+</html>
